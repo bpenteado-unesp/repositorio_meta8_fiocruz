@@ -3,7 +3,7 @@ from helper import render_menu
 
 render_menu()
 
-st.title("Repositório Fiocruz de recursos para ciência de dados na vigilância epidemiológica")
+st.title("Glossário de termos da ciência de dados para a vigilância epidemiológica")
 
 import streamlit as st
 
@@ -164,7 +164,8 @@ for termo, descricao in sorted(termos.items()):
     indice[letra].append((termo, descricao))
 
 # 3. Criando a interface no Streamlit
-st.title("📖 Índice Remissivo")
+st.markdown("## Índice Remissivo")
+st.markdown("<div id='topo'></div>", unsafe_allow_html=True)
 st.write("Navegue pelos termos organizados alfabeticamente.")
 
 # Menu de atalhos no topo (opcional)
@@ -187,3 +188,5 @@ for letra in sorted(indice.keys()):
                 st.markdown(f"- **{termo}**: [Acessar documentação]({descricao})")
             else:
                 st.markdown(f"- **{termo}**: {descricao}")
+        st.markdown("[↑ Voltar para o topo](#topo)")
+
