@@ -211,6 +211,7 @@ def popular_retorno(dados):
 def buscar(texto, df):
 	dados_filtrados = df[
 		df['ferramenta'].str.contains(texto, case=False, na=False) |
+		df['categoria'].str.contains(texto, case=False, na=False) |
 		df['conteudo_principal'].str.contains(texto, case=False, na=False)
 	]
 	return dados_filtrados
