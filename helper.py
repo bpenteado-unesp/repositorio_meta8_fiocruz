@@ -215,3 +215,25 @@ def buscar(texto, df):
 		df['conteudo_principal'].str.contains(texto, case=False, na=False)
 	]
 	return dados_filtrados
+
+def exibe_dados(path_arquivo):
+	with st.expander(":green-background[Clique para ver possíveis cenários de uso]"):
+		st.markdown("## Quadro de síntese:")
+		carregar_quadro_sintese(path_arquivo)
+	with st.spinner("Carregando dados..."):
+		st.markdown("## Ferramentas sugeridas:")
+		dados = carregar_dados(path_arquivo)
+		
+		sub_busca, sub_total, sub_ranking = st.columns([5,2,3], vertical_alignment="center")
+
+		with sub_busca:
+			strBusca = st.text_input("Busque por texto...")
+			if strBusca != "":
+				dados = buscar(strBusca, dados)
+		with sub_total:
+			total_registros = len(dados) 
+			st.metric(label="Total de Registros", value=total_registros)
+		with sub_ranking:
+			dados = carregar_ordenacao(dados)
+		
+	popular_retorno(dados)
