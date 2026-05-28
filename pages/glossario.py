@@ -227,3 +227,4 @@ for letra in sorted(indice.keys()):
                 st.markdown(f"- **{termo}**: {descricao}")
         st.markdown("[↑ Voltar para o topo](#topo)")
 
+
