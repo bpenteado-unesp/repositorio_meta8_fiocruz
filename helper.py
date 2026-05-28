@@ -9,6 +9,7 @@ def render_menu():
 	st.sidebar.page_link("pages/storage.py", label="Armazenamento", icon=":material/database:")
 	st.sidebar.page_link("pages/modeling.py", label="Modelagem", icon=":material/account_tree:")
 	st.sidebar.page_link("pages/dissemination.py", label="Disseminação", icon=":material/campaign:")
+	st.sidebar.page_link("pages/tools.py", label="Desenvolvimento", icon=":material/code:")
 	st.sidebar.divider()
 	st.sidebar.page_link("pages/glossario.py", label="Glossário de termos", icon=":material/dictionary:")
 
