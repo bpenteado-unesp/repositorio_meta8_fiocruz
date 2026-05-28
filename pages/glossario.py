@@ -228,3 +228,18 @@ for letra in sorted(indice.keys()):
         st.markdown("[↑ Voltar para o topo](#topo)")
 
 
+
+st.markdown("### Outros glossários:")
+st.page_link("https://www.knime.com/blog/data-science-glossary", label="Data Science Glossary: 250+ Terms You Need to Know")
+st.page_link("https://www.datascienceglossary.org/", label="Data Science Glossary")
+st.page_link("https://developers.google.com/machine-learning/glossary", label="Glossário de Machine Learning do Google")
+st.page_link("https://docs.cloud.google.com/docs/generative-ai/glossary", label="Glossário de IA generativa Google")
+st.page_link("https://www.ibm.com/docs/en/ws-and-kc?topic=glossary", label="Glossary - IBM")
+st.page_link("https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/definitions.html", label="Definitions - Generative AI Lens - AWS")
+st.page_link("https://hai.stanford.edu/ai-definitions", label="Artificial Intelligence Glossary | Stanford HAI")
+st.page_link("https://www.coe.int/en/web/artificial-intelligence/glossary", label="Glossary - Artificial Intelligence - Council of Europe")
+st.page_link("https://mitsloanedtech.mit.edu/ai/basics/glossary/", label="Glossary of Terms: Generative AI Basics | MIT Sloan Teaching & Learning Technologies")
+st.page_link("https://ai.ctlt.ubc.ca/resources/glossary-of-genai-terms/", label="Glossary of GenAI Terms | AI In Teaching and Learning - University of British Columbia")
+st.page_link("https://www.ft.com/content/c0c8d205-e158-409e-963c-a3ac821cd7ba", label="The FT AI glossary | Financial Times")
+st.page_link("https://www.businessinsider.com/ai-terms-definitions-glossary", label="A survival guide to the words behind the AI boom | Business Insider")
+st.page_link("https://zenodo.org/records/15849524", label="Glossary of Generative Artificial Intelligence for Education | Zenodo")
