@@ -1,2 +1,4 @@
 [client]
 showSidebarNavigation = false
+# autoriza o Streamlit a servir arquivos locais via HTTP
+enableStaticeServing = true 

@@ -11,6 +11,8 @@ def render_menu():
 	st.sidebar.page_link("pages/dissemination.py", label="Disseminação", icon=":material/campaign:")
 	st.sidebar.page_link("pages/tools.py", label="Desenvolvimento", icon=":material/code:")
 	st.sidebar.divider()
+	st.sidebar.page_link("pages/code_samples.py", label="Exemplos de código em R", icon=":material/source:")
+	st.sidebar.divider()
 	st.sidebar.page_link("pages/glossario.py", label="Glossário de termos", icon=":material/dictionary:")
 
 	# Injeta CSS para ajustar a largura e altura do logo
