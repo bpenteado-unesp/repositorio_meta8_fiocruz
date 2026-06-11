@@ -53,7 +53,7 @@ with col2:
 	)
 
 # Busca todos os arquivos .r ou .R na pasta indicada
-arquivos_r = glob.glob(os.path.join(path_arquivo, "*.[rR]"))
+arquivos_r = sorted(glob.glob(os.path.join(path_arquivo, "*.[rR]")))
 
 if not arquivos_r:
     st.warning(f"Nenhum arquivo .R encontrado no diretório: '{diretorio}'")
